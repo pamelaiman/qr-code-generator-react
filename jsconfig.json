@@ -1,1 +1,6 @@
-{ "compilerOptions": {} }
+{
+    "compilerOptions": {
+        "checkJs": true,
+        "jsx": "preserve"
+    }
+}
