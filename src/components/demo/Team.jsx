@@ -1,11 +1,10 @@
 import PropTypes from "prop-types";
+import { capitalise } from "./capitalise";
 
 export function Team(props) {
-    console.log(props.title.toUpperCase());
-
     return (
         <div>
-            <h2>{props.title}</h2>
+            <h2>{capitalise(props.title)}</h2>
             {props.subtitle && <p>{props.subtitle}</p>}
             <p>Example prop (props.scores) is: {props.scores.join()}</p>
         </div>
